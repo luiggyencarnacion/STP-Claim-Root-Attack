@@ -29,7 +29,7 @@
 
 1. [Objetivo del Laboratorio](#-objetivo-del-laboratorio)
 2. [Objetivo del Script](#-objetivo-del-script)
-3. [Requisitos](#-requisitos)
+3. [Requisitos](#-requisitos-para-utilizar-la-herramienta)
 4. [Instalación](#-instalación)
 5. [Documentación de la Red](#-documentación-de-la-red)
 6. [Funcionamiento del Script](#-funcionamiento-del-script)
@@ -76,8 +76,8 @@ El script `stp_root.py` primero escucha BPDUs activos para identificar el Root B
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/<tu-usuario>/stp-root-attack.git
-cd stp-root-attack
+git clone https://github.com/luiggyencarnacion/STP-Root-Attack.git
+cd STP-Root-Attack
 
 # 2. Crear entorno virtual
 python3 -m venv venv
@@ -117,11 +117,11 @@ scapy>=2.5.0
    └──┬───┬──┘               └──┬───┬──┘
 Gig0/2│   │Gig0/1         Gig0/1│   │Gig0/2
       │   └─────────────────────┘   │
- ┌────┴──────┐                 ┌────┴────┐
- │KaliLinux-1│                 │   PC1   │
- │ Atacante  │                 │ Victima │
+ ┌────┴──────┐                 ┌────┴─────┐
+ │KaliLinux-1│                 │   PC1    │
+ │ Atacante  │                 │ Victima  │
  │10.6.63.11 │                 │10.6.63.50│
- └───────────┘                 └─────────┘
+ └───────────┘                 └──────────┘
        e0                           e0
 
 Tras el ataque:
