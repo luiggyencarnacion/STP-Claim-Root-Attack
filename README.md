@@ -76,8 +76,8 @@ El script `stp_root.py` primero escucha BPDUs activos para identificar el Root B
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/luiggyencarnacion/STP-Root-Attack.git
-cd STP-Root-Attack
+git clone https://github.com/luiggyencarnacion/STP-Claim-Root-Attack.git
+cd STP-Claim-Root-Attack
 
 # 2. Crear entorno virtual
 python3 -m venv venv
