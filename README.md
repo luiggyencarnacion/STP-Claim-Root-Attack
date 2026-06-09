@@ -168,7 +168,7 @@ Todo el tráfico atraviesa el host atacante
 |---|---|
 | Red | 10.6.63.0/24 |
 | Protocolo STP | IEEE 802.1D |
-| Simulador | GNS3 |
+| Emulador | GNS3 |
 | Plataforma atacante | Kali Linux |
 | VLANs | VLAN 1 (default) |
 
