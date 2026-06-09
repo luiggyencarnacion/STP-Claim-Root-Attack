@@ -117,17 +117,19 @@ scapy>=2.5.0
    └──┬───┬──┘               └──┬───┬──┘
 Gig0/2│   │Gig0/1         Gig0/1│   │Gig0/2
       │   └─────────────────────┘   │
- ┌────┴──────┐                 ┌────┴─────┐
- │KaliLinux-1│                 │   PC1    │
- │ Atacante  │                 │ Victima  │
- │10.6.63.11 │                 │10.6.63.50│
- └───────────┘                 └──────────┘
+ ┌────┴────────┐               ┌────┴───────┐
+ │ KaliLinux-1 │               │    PC1     │
+ │  Atacante   │               │  Victima   │
+ │ 10.6.63.11  │               │ 10.6.63.50 │
+ └─────────────┘               └────────────┘
        e0                           e0
 
 Tras el ataque:
 KaliLinux-1 → Root Bridge (prioridad 0)
 Todo el tráfico atraviesa el host atacante
 ```
+
+![Topología GNS3](images/01_topologia_gns3.png)
 
 ### Tabla de Conexiones
 
@@ -228,7 +230,7 @@ Los switches comparan `rootid=0` con la prioridad del Root Bridge actual, conclu
 ## 🚀 Uso y Ejecución
 
 ```bash
-sudo python3 stp_root.py
+sudo python3 stp_claim_root_attack.py
 ```
 
 **Interacción esperada:**
@@ -307,15 +309,6 @@ evidencias/
 ## 🎬 Video de Demostración
 
 > 📺 **[Ver demostración en YouTube →](https://youtu.be/ve_pClKvqqo?si=BVjVVlK931jPC-Vo)**
-
-- ✅ Topología en GNS3 con nombre **Luiggy Encarnación** y matrícula **2025-0663**
-- ✅ Hora y fecha del sistema visibles
-- ✅ Cara y voz del autor
-- ✅ `show spanning-tree` antes del ataque (Root Bridge legítimo)
-- ✅ Ataque en ejecución con contador de BPDUs
-- ✅ `show spanning-tree` durante el ataque (Root Bridge cambiado)
-- ✅ Aplicación de BPDU Guard y verificación de bloqueo
-- ⏱️ Duración máxima: 5 minutos
 
 ---
 
